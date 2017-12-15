@@ -15,6 +15,9 @@
     overflow: auto;
 }
 
+.nav > li > a {
+  color: black;
+}
 
 form.navbar-form {
   display: flex;
