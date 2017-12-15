@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+            <dl>
+                        <dd class="name">
+                            <span id="list_title"th:text="${data.getName()}">ddddd</span>
+                        </dd>
+                        <dd>
+                            <img src="/img/detail/location.png" alt="location">
+                            <span id="list_location" th:text="${data.getAddress()}">ddd</span>
+                        </dd>
+                        <dd>
+                            <img src="/img/detail/call.png" alt="call">
+                            <span id="list_call"th:text="${data.getPhoneNum()}">dddd</span>
+                        </dd>
+                        <dd>
+                            <img src="/img/detail/star.png" alt="star">
+                            <span id="list_star"th:text="${data.getPoint()}">3.0점</span>
+                        </dd>
+            </dl>
+</body>
+</html>
