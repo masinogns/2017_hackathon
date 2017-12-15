@@ -2,36 +2,90 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/home.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   </head>
   <body>
-    <div class="container">
-      <div class="menu-bar">
-        <dl>
-          <dd><a href="#">제주 지도</a></dd>
-          <dd><a href="#">관광지</a></dd>
-          <dd><a href="#">맛집</a></dd>
-          <dd><a href="#">숙박</a></dd>
-        </dl>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
+    <div class="container">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">제주 지도</a>
+        </div>
+        <ul class="nav navbar-header">
+          <li class="active"><a href="#">멋있는 곳</a></li>
+          <li><a href="#">맛있는 집</a></li>
+          <li><a href="#">편안한 곳</a></li>
+        </ul>
+        <form class="navbar-form navbar-left" action="/action_page.php">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" name="search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </nav>
+    </div>
+
+
+    <div class="container">
       <div class="announce">
         <dl>
           <dt>
             <span class="title">공지사항</span>
-            <button type="button" name="button"><img src="#" alt=""></button>
+            <button type="button" name="button"><img src="https://png.icons8.com/metro/540/plus.png" alt=""></button>
           </dt>
 
-          <dd></dd>
-          <dd></dd>
-          <dd></dd>
-          <dd></dd>
-          <dd></dd>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="#">First item</a></li>
+            <li class="list-group-item"><a href="#">Second item</a></li>
+            <li class="list-group-item"><a href="#">Third item</a></li>
+          </ul>
 
         </dl>
       </div>
@@ -42,14 +96,63 @@
           <dl>
             <dt>
               <span class="title">추천 일정</span>
-              <button type="button" name="button"><img src="#" alt=""></button>
+              <button type="button" name="button"><img src="https://png.icons8.com/metro/540/plus.png" alt=""></button>
             </dt>
 
-            <dd></dd>
-            <dd></dd>
-            <dd></dd>
-            <dd></dd>
-            <dd></dd>
+            <div class="container">
+
+
+            <section class="p-0" id="portfolio">
+              <div class="container-fluid p-0">
+                <div class="row no-gutters popup-gallery">
+                  <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+                      <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+                      <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                          <div class="project-category text-faded">
+                            이익전의 여행 추천
+                          </div>
+                          <div class="project-name">
+                            뉴질랜드!!
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+                      <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+                      <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                          <div class="project-category text-faded">
+                            백기훈의 여행 추천
+                          </div>
+                          <div class="project-name">
+                            베트남!!
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+                      <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+                      <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                          <div class="project-category text-faded">
+                            허지원의 여행 추천
+                          </div>
+                          <div class="project-name">
+                            캄보디아!!
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+            </section>
+            </div>
+
 
           </dl>
         </div>
@@ -58,18 +161,69 @@
           <dl>
             <dt>
               <span class="title">추천 여행지</span>
-              <button type="button" name="button"><img src="#" alt=""></button>
+              <button type="button" name="button"><img src="https://png.icons8.com/metro/540/plus.png" alt=""></button>
             </dt>
 
-            <dd></dd>
-            <dd></dd>
-            <dd></dd>
-            <dd></dd>
-            <dd></dd>
+            <div class="container">
+            <section class="p-0" id="portfolio">
+              <div class="container-fluid p-0">
+                <div class="row no-gutters popup-gallery">
+                  <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+                      <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+                      <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                          <div class="project-category text-faded">
+                            뉴질랜드
+                          </div>
+                          <div class="project-name">
+                            행복의 나라 뉴질랜드
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+                      <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+                      <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                          <div class="project-category text-faded">
+                            베트남
+                          </div>
+                          <div class="project-name">
+                            따듯한 베트남
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+                      <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+                      <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                          <div class="project-category text-faded">
+                            캄보디아
+                          </div>
+                          <div class="project-name">
+                            싸와디캅 코쿤캅
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+            </section>
+            </div>
 
           </dl>
         </div>
+
+
+
       </div>
+
+
 
     </div>
   </body>
